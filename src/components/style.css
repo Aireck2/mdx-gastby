@@ -1,0 +1,64 @@
+.bold {
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-center h2 {
+    font-size: 80px;
+    margin: 0 0 20px 20px;
+}
+
+h1 {
+    font-size: 70px;
+    margin: 0;
+}
+
+.mb {
+    margin-bottom: 40px;
+}
+
+p {
+    margin-top: 0;
+}
+
+.triangulo_top_left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 300px solid #112B49;
+    border-right: 300px solid transparent;
+}
+
+.triangulo_bottom_right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 300px solid #112B49;
+    border-left: 300px solid transparent;
+}
+
+.relative {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    top: 0;
+
+}
+
+li {
+    color: #112B49 !important;
+    font-size: 30px;
+}

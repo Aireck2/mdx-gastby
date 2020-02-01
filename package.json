@@ -1,0 +1,26 @@
+{
+  "name": "mdx-gastby",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/Aireck2/mdx-gastby.git",
+  "author": "Erick <erickescribaa@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "mdx-deck": "^1.7.4",
+    "style-loader": "^0.23.0"
+  },
+  "scripts": {
+    "build": "mdx-deck build deck.js --webpack webpack.config.js",
+    "postbuild": "npm run build:pdf",
+    "build:pdf": "mdx-deck pdf deck.js",
+    "start": "mdx-deck deck.js --webpack webpack.config.js"
+  },
+  "dependencies": {
+    "gatsby-mdx-theme": "^0.0.6",
+    "react": "^16.12.0",
+    "typeface-space-mono": "^0.0.71",
+    "typeface-spectral": "^0.0.72"
+  }
+}

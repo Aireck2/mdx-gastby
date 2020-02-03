@@ -2,7 +2,11 @@ import React from "react";
 import "./style.css";
 
 const EighthSlide = props => {
-  return <div>{props.children}</div>;
+  return (
+    <div>
+      <h2>useSubscription</h2>
+    </div>
+  );
 };
 
 export default EighthSlide;

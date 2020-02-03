@@ -3,7 +3,7 @@ import "./style.css";
 
 const SecondSlide = () => {
   return (
-    <div>
+    <div className="circle">
       <img
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSs-WZ89s2wFK8WAWpE0YjyFPUiX4xAMPQsL0_ow2kSKK0RcntP"
         alt="graphql"

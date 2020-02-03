@@ -13,6 +13,14 @@ import FifthSlide from "../src/components/Fifth.jsx";
 import SixthSlide from "../src/components/Sixth.jsx";
 import SeventhSlide from "../src/components/Seventh.jsx";
 import EighthSlide from "../src/components/Eighth.jsx";
+import NinethSlide from "../src/components/Nineth.jsx";
+import TenthSlide from "../src/components/Tenth.jsx";
+import EleventhSlide from "../src/components/Eleventh.jsx";
+import TwelfthSlide from "../src/components/Twelfth.jsx";
+import ThirteenthSlide from "../src/components/Thirteenth.jsx";
+import FourteenthSlide from "../src/components/Fourteenth.jsx";
+
+import '../src/components/style.css'
 
 <FirstSlide></FirstSlide>
 <Head>
@@ -43,6 +51,7 @@ import EighthSlide from "../src/components/Eighth.jsx";
 - Apollo Graph Manager
 - Apollo Links
 
+
 ---
 
 <SixthSlide></SixthSlide>
@@ -52,6 +61,11 @@ import EighthSlide from "../src/components/Eighth.jsx";
 
 ---
 
+
+<img className="imagen" src="https://miro.medium.com/max/1540/0*BC0YUwCSBAOOemYu." />
+
+
+---
 <EighthSlide>
 
   ## Features
@@ -65,3 +79,71 @@ import EighthSlide from "../src/components/Eighth.jsx";
 - **Zero config-caching:** you get an intelligent cache out of the box with no additional configuration required.
 
 </EighthSlide>
+
+---
+
+<NinethSlide>
+
+> - yarn add apollo-boost @apollo/react-hooks graphql graphql-tag
+
+- `apollo-boost`: Package containing everything you need to set up Apollo Client
+- `@apollo/react-hooks`: React hooks based view layer integration
+- `graphql`: Also parses your GraphQL queries
+- `graphql-tag`: A JavaScript template literal tag that parses GraphQL queries
+
+</NinethSlide>
+---
+
+
+```
+//index.js
+import { ApolloClient } from 'apollo-client'
+import { createHttpLink } from 'apollo-link-http'
+import { InMemoryCache } from 'apollo-cache-inmemory'
+import { ApolloProvider } from 'react-apollo'
+import App from './App'
+
+
+```
+---
+
+```
+const client = new ApolloClient({
+  link: createHttpLink({ uri: 'https://api.github.com/graphql' }),
+  cache: new InMemoryCache()
+})
+
+```
+
+---
+```
+ReactDOM.render(
+  <ApolloProvider client={client}>
+    <App />
+  </ApolloProvider>,
+  document.getElementById('root')
+)
+```
+
+---
+
+<TenthSlide>
+</TenthSlide>
+
+---
+
+<EleventhSlide></EleventhSlide>
+
+---
+
+<TwelfthSlide></TwelfthSlide>
+
+---
+
+<ThirteenthSlide></ThirteenthSlide>
+
+---
+
+<FourteenthSlide></FourteenthSlide>
+
+---

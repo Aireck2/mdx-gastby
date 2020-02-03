@@ -1,9 +1,8 @@
 module.exports = {
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: ['css-loader/locals']
       },
       {
         test: /\.(woff(2)?|ttf|eot|svg)/,
